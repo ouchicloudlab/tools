@@ -1,0 +1,13 @@
+{
+  "name": "sakutto-tools",
+  "version": "0.1.0",
+  "description": "日常の計算・変換をブラウザ内で片づける無料ツール集（静的サイト）",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "serve": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs"
+  },
+  "license": "MIT"
+}
