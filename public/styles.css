@@ -227,3 +227,11 @@ td { font-variant-numeric: tabular-nums; }
   .result-main { font-size: 25px; }
   .cats { width: 100%; margin-left: 0; }
 }
+
+/* ---- 姉妹サイトへの導線 ---- */
+.sister-site {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 9px; padding: 12px 16px; margin: 4px 0 12px;
+  font-size: 13px;
+}
+.sister-site a { font-weight: 700; }

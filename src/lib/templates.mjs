@@ -169,6 +169,11 @@ ${body}
       <a href="${withBase("/contact/")}">お問い合わせ</a>
       <a href="${withBase("/disclaimer/")}">免責事項</a>
     </nav>
+    <p class="sister-site">
+      姉妹サイト:
+      <a href="${site.url}/">🖥️ おうちクラウド Lab</a>
+      — ミニPC・NAS・ネットワーク機材を、消費電力と総コストから選ぶメディアです。
+    </p>
     <p class="copy">© ${new Date().getFullYear()} ${esc(site.name)}</p>
   </div>
 </footer>
