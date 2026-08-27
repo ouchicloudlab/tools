@@ -9,6 +9,7 @@ export default {
   keywords: [
     "家賃", "目安", "年収", "手取り", "3分の1", "初期費用", "計算", "賃貸", "引っ越し",
   ],
+  yomi: "やちん しょきひよう ちんたい",
   related: ["jikyu-nensyu", "loan-keisan"],
 
   ui: `

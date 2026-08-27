@@ -9,6 +9,7 @@ export default {
   keywords: [
     "年齢早見表", "西暦", "和暦", "干支", "一覧", "履歴書", "入学", "卒業", "学歴",
   ],
+  yomi: "ねんれいはやみひょう",
   related: ["nenrei-keisan", "wareki-seireki"],
 
   ui: `

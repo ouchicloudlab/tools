@@ -9,6 +9,7 @@ export default {
   keywords: [
     "振込手数料", "比較", "計算", "ネット銀行", "無料回数", "ATM", "年間", "節約",
   ],
+  yomi: "ふりこみてすうりょう ぎんこう",
   related: ["chokin-mokuhyo", "kawase-tesuryo"],
 
   ui: `

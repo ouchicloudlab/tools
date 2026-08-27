@@ -9,6 +9,7 @@ export default {
   keywords: [
     "容量", "変換", "リットル", "ガロン", "オンス", "合", "升", "cc", "ml", "単位",
   ],
+  yomi: "ようりょう りっとる ごう しょう",
   related: ["osaji-kosaji", "menseki-taiseki"],
 
   ui: `

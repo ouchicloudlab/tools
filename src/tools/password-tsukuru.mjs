@@ -9,6 +9,7 @@ export default {
   keywords: [
     "パスワード", "生成", "作成", "ランダム", "強度", "セキュリティ", "自動生成", "強力",
   ],
+  yomi: "ぱすわーど せいせい",
   related: ["moji-henkan", "mojisu-count"],
 
   ui: `

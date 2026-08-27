@@ -9,6 +9,7 @@ export default {
   keywords: [
     "為替", "計算", "両替", "手数料", "レート", "ドル", "円", "スプレッド", "海外",
   ],
+  yomi: "かわせ りょうがえ どる",
   related: ["percent-keisan", "shohizei-keisan"],
 
   ui: `

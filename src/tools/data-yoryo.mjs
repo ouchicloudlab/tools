@@ -9,6 +9,7 @@ export default {
   keywords: [
     "GB", "MB", "TB", "容量", "変換", "データ", "ギガ", "バイト", "何枚", "ストレージ",
   ],
+  yomi: "でーたようりょう ぎが めが",
   related: ["inch-cm"],
 
   ui: `

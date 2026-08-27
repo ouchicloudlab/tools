@@ -9,6 +9,7 @@ export default {
   keywords: [
     "文字コード", "Unicode", "UTF-8", "サロゲートペア", "文字化け", "コードポイント", "絵文字", "調べる",
   ],
+  yomi: "もじこーど もじばけ",
   related: ["mojisu-count", "url-encode", "shinsu-henkan"],
 
   ui: `

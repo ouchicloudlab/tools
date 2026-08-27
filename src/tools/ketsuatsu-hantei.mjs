@@ -9,6 +9,7 @@ export default {
   keywords: [
     "血圧", "判定", "正常値", "高血圧", "基準", "上", "下", "家庭血圧", "収縮期", "拡張期",
   ],
+  yomi: "けつあつ こうけつあつ",
   related: ["bmi-keisan", "calorie-hitsuyo"],
 
   ui: `

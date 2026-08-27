@@ -9,6 +9,7 @@ export default {
   keywords: [
     "消費カロリー", "計算", "運動", "METs", "ウォーキング", "ランニング", "ダイエット", "kcal", "有酸素",
   ],
+  yomi: "うんどう しょうひかろりー",
   related: ["bmi-keisan", "calorie-hitsuyo"],
 
   ui: `

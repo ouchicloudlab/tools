@@ -9,6 +9,7 @@ export default {
   keywords: [
     "時給", "月給", "年収", "換算", "計算", "日給", "手取り", "パート", "アルバイト", "収入",
   ],
+  yomi: "じきゅう げっきゅう ねんしゅう てどり",
   related: ["shohizei-keisan", "percent-keisan"],
 
   ui: `

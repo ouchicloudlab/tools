@@ -9,6 +9,7 @@ export default {
   keywords: [
     "華氏", "摂氏", "温度", "変換", "ポンド", "オンス", "kg", "重さ", "℉", "℃",
   ],
+  yomi: "おんど おもさ かし せっし ぽんど",
   related: ["inch-cm", "osaji-kosaji"],
 
   ui: `

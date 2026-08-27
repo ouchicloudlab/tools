@@ -9,6 +9,7 @@ export default {
   keywords: [
     "カラーコード", "変換", "HEX", "RGB", "HSL", "16進数", "色", "コントラスト", "配色",
   ],
+  yomi: "からーこーど いろ",
   related: ["url-encode", "moji-henkan"],
 
   ui: `

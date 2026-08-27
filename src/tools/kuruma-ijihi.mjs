@@ -9,6 +9,7 @@ export default {
   keywords: [
     "車", "維持費", "計算", "年間", "自動車税", "車検", "任意保険", "軽自動車", "ガソリン代",
   ],
+  yomi: "くるま いじひ じどうしゃぜい しゃけん",
   related: ["gasoline-dai", "loan-keisan"],
 
   ui: `

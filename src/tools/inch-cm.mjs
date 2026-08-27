@@ -9,6 +9,7 @@ export default {
   keywords: [
     "インチ", "cm", "センチ", "変換", "フィート", "ヤード", "尺", "長さ", "単位換算", "モニター",
   ],
+  yomi: "いんち せんち しゃく すん",
   related: ["tsubo-heibei"],
 
   ui: `

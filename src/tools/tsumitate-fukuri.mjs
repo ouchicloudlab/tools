@@ -9,6 +9,7 @@ export default {
   keywords: [
     "積立", "複利", "計算", "NISA", "資産運用", "利回り", "シミュレーション", "貯金", "投資信託",
   ],
+  yomi: "つみたて ふくり しさんうんよう",
   related: ["loan-keisan", "percent-keisan"],
 
   ui: `

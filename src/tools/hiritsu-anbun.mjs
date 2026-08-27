@@ -9,6 +9,7 @@ export default {
   keywords: [
     "比率", "按分", "計算", "比例配分", "割合", "分ける", "3対2", "レシピ", "負担割合",
   ],
+  yomi: "ひりつ あんぶん はいぶん",
   related: ["bunsu-keisan", "percent-keisan", "warikan"],
 
   ui: `

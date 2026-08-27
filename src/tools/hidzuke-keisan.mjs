@@ -9,6 +9,7 @@ export default {
   keywords: [
     "日数計算", "日付計算", "何日後", "何日前", "日数", "営業日", "期間", "カウントダウン", "締切",
   ],
+  yomi: "ひづけ にっすう きかん",
   related: ["nenrei-keisan", "wareki-seireki"],
 
   ui: `

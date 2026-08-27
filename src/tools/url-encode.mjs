@@ -9,6 +9,7 @@ export default {
   keywords: [
     "URLエンコード", "デコード", "Base64", "パーセントエンコード", "変換", "エスケープ", "HTML", "%E3",
   ],
+  yomi: "ゆーあーるえる えんこーど",
   related: ["moji-henkan", "mojisu-count"],
 
   ui: `

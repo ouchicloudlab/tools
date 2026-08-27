@@ -9,6 +9,7 @@ export default {
   keywords: [
     "用紙サイズ", "A4", "B5", "mm", "コピー", "拡大", "縮小", "倍率", "A判", "B判", "印刷",
   ],
+  yomi: "ようしさいず かみ かくだい しゅくしょう",
   related: ["inch-cm"],
 
   ui: `

@@ -9,6 +9,7 @@ export default {
   keywords: [
     "割引", "計算", "値引き", "OFF", "セール", "何割引", "割引率", "逆算", "半額",
   ],
+  yomi: "わりびき ねびき",
   related: ["shohizei-keisan", "percent-keisan"],
 
   ui: `

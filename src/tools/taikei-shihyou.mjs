@@ -9,6 +9,7 @@ export default {
   keywords: [
     "体脂肪率", "ウエスト", "計算", "内臓脂肪", "メタボ", "体型", "除脂肪体重", "判定", "腹囲",
   ],
+  yomi: "たいけい たいしぼうりつ うえすと",
   related: ["bmi-keisan", "calorie-hitsuyo"],
 
   ui: `

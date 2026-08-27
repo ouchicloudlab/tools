@@ -9,6 +9,7 @@ export default {
   keywords: [
     "三角形", "面積", "計算", "ヘロンの公式", "ピタゴラス", "斜辺", "角度", "直角三角形", "対角線",
   ],
+  yomi: "さんかっけい ぴたごらす",
   related: ["menseki-taiseki", "bunsu-keisan"],
 
   ui: `

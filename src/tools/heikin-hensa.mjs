@@ -9,6 +9,7 @@ export default {
   keywords: [
     "平均", "中央値", "標準偏差", "計算", "偏差値", "分散", "統計", "ばらつき", "最頻値",
   ],
+  yomi: "へいきん ちゅうおうち ひょうじゅんへんさ へんさち",
   related: ["percent-keisan", "hiritsu-anbun"],
 
   ui: `

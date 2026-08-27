@@ -9,6 +9,7 @@ export default {
   keywords: [
     "通信速度", "Mbps", "ダウンロード", "時間", "計算", "回線速度", "光回線", "目安", "遅い",
   ],
+  yomi: "つうしんそくど かいせん だうんろーど",
   related: ["data-yoryo", "sokudo-keisan"],
 
   ui: `

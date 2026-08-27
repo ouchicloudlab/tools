@@ -9,6 +9,7 @@ export default {
   keywords: [
     "消費税", "計算", "税込", "税抜", "内税", "外税", "10%", "8%", "軽減税率", "逆算",
   ],
+  yomi: "しょうひぜい ぜいこみ ぜいぬき",
   related: ["waribiki-keisan", "percent-keisan"],
 
   ui: `

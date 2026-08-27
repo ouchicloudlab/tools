@@ -9,6 +9,7 @@ export default {
   keywords: [
     "歩数", "距離", "カロリー", "1万歩", "何km", "歩幅", "ウォーキング", "計算", "消費カロリー",
   ],
+  yomi: "ほすう あるく うぉーきんぐ",
   related: ["undou-calorie", "sokudo-keisan"],
 
   ui: `

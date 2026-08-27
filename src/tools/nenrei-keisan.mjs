@@ -9,6 +9,7 @@ export default {
   keywords: [
     "年齢計算", "満年齢", "数え年", "干支", "星座", "生年月日", "学年", "早生まれ", "何歳",
   ],
+  yomi: "ねんれい かぞえどし えと",
   related: ["hidzuke-keisan", "wareki-seireki"],
 
   ui: `

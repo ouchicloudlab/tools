@@ -9,6 +9,7 @@ export default {
   keywords: [
     "坪", "平米", "㎡", "畳", "変換", "計算", "面積", "何畳", "坪数", "不動産",
   ],
+  yomi: "つぼ へいべい じょう ちょう",
   related: ["inch-cm"],
 
   ui: `

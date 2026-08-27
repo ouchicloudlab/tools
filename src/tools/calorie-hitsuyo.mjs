@@ -9,6 +9,7 @@ export default {
   keywords: [
     "必要カロリー", "基礎代謝", "計算", "PFC", "ダイエット", "摂取カロリー", "タンパク質", "maintenance",
   ],
+  yomi: "かろりー きそたいしゃ",
   related: ["bmi-keisan", "undou-calorie"],
 
   ui: `

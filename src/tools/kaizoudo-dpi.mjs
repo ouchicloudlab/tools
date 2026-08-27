@@ -9,6 +9,7 @@ export default {
   keywords: [
     "解像度", "DPI", "ピクセル", "印刷", "サイズ", "画像", "ppi", "画素数", "計算",
   ],
+  yomi: "かいぞうど いんさつ がぞう",
   related: ["yoshi-size", "inch-cm"],
 
   ui: `

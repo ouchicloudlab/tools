@@ -9,6 +9,7 @@ export default {
   keywords: [
     "確率", "計算", "ガチャ", "抽選", "何回", "組み合わせ", "順列", "期待値", "宝くじ",
   ],
+  yomi: "かくりつ がちゃ くみあわせ",
   related: ["percent-keisan", "yakusu-baisu"],
 
   ui: `

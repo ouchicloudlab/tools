@@ -9,6 +9,7 @@ export default {
   keywords: [
     "割り勘", "計算", "飲み会", "会費", "端数", "傾斜配分", "幹事", "何円", "支払い",
   ],
+  yomi: "わりかん のみかい かいひ",
   related: ["shohizei-keisan", "percent-keisan"],
 
   ui: `

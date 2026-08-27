@@ -9,6 +9,7 @@ export default {
   keywords: [
     "ガソリン代", "計算", "燃費", "走行距離", "リッター", "旅費", "割り勘", "交通費", "ドライブ",
   ],
+  yomi: "がそりんだい ねんぴ",
   related: ["denkidai-keisan", "waribiki-keisan"],
 
   ui: `

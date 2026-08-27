@@ -9,6 +9,7 @@ export default {
   keywords: [
     "時差", "計算", "世界時計", "現地時間", "サマータイム", "海外", "会議", "UTC", "タイムゾーン",
   ],
+  yomi: "じさ せかいじかん げんちじかん",
   related: ["jikan-keisan", "youbi-keisan"],
 
   ui: `

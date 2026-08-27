@@ -9,6 +9,7 @@ export default {
   keywords: [
     "靴", "サイズ", "変換", "US", "UK", "EU", "cm", "スニーカー", "海外", "対応表",
   ],
+  yomi: "くつ さいず すにーかー",
   related: ["inch-cm", "tsubo-heibei"],
 
   ui: `

@@ -9,6 +9,7 @@ export default {
   keywords: [
     "漢数字", "大字", "変換", "領収書", "契約書", "壱", "弐", "参", "金額", "読み方",
   ],
+  yomi: "かんすうじ だいじ りょうしゅうしょ",
   related: ["moji-henkan", "mojisu-count"],
 
   ui: `

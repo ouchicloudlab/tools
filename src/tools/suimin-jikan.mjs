@@ -9,6 +9,7 @@ export default {
   keywords: [
     "睡眠", "時間", "逆算", "何時に寝る", "睡眠サイクル", "90分", "起床", "レム睡眠", "目覚め",
   ],
+  yomi: "すいみん ねむり きしょう",
   related: ["jikan-keisan", "hidzuke-keisan"],
 
   ui: `

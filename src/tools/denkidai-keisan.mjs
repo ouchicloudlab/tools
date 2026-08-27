@@ -9,6 +9,7 @@ export default {
   keywords: [
     "電気代", "計算", "消費電力", "W", "ワット", "kWh", "電気料金", "待機電力", "節電", "エアコン",
   ],
+  yomi: "でんきだい でんきりょうきん",
   related: ["percent-keisan"],
 
   ui: `

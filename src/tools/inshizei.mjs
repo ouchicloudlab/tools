@@ -9,6 +9,7 @@ export default {
   keywords: [
     "印紙税", "収入印紙", "計算", "領収書", "契約書", "金額", "いくら", "非課税", "電子契約",
   ],
+  yomi: "いんしぜい しゅうにゅういんし",
   related: ["kansuji", "shohizei-keisan"],
 
   ui: `

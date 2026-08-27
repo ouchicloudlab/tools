@@ -9,6 +9,7 @@ export default {
   keywords: [
     "ローマ字", "変換", "ヘボン式", "訓令式", "パスポート", "名前", "つづり", "ひらがな",
   ],
+  yomi: "ろーまじ へぼんしき ぱすぽーと",
   related: ["moji-henkan", "kansuji"],
 
   ui: `

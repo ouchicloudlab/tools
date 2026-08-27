@@ -9,6 +9,7 @@ export default {
   keywords: [
     "残業代", "計算", "割増賃金", "深夜手当", "休日出勤", "時間外", "1.25倍", "月給", "時給",
   ],
+  yomi: "ざんぎょうだい わりましちんぎん",
   related: ["jikyu-nensyu", "jikan-keisan"],
 
   ui: `

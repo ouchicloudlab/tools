@@ -9,6 +9,7 @@ export default {
   keywords: [
     "進数変換", "2進数", "16進数", "10進数", "8進数", "バイナリ", "hex", "基数", "計算",
   ],
+  yomi: "しんすう にしんすう じゅうろくしんすう",
   related: ["data-yoryo", "color-code"],
 
   ui: `

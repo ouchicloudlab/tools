@@ -9,6 +9,7 @@ export default {
   keywords: [
     "水分", "摂取量", "目安", "1日", "何リットル", "水", "脱水", "熱中症", "計算",
   ],
+  yomi: "すいぶん みず ほきゅう",
   related: ["calorie-hitsuyo", "bmi-keisan"],
 
   ui: `

@@ -9,6 +9,7 @@ export default {
   keywords: [
     "心拍数", "目標", "計算", "脂肪燃焼", "最大心拍数", "カルボーネン", "運動強度", "ゾーン",
   ],
+  yomi: "しんぱくすう みゃく",
   related: ["undou-calorie", "calorie-hitsuyo"],
 
   ui: `

@@ -9,6 +9,7 @@ export default {
   keywords: [
     "CSV", "変換", "改行", "カンマ", "区切り", "リスト", "整形", "連番", "一括",
   ],
+  yomi: "りすと せいけい くぎり",
   related: ["moji-henkan", "mojisu-count"],
 
   ui: `

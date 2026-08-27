@@ -9,6 +9,7 @@ export default {
   keywords: [
     "パーセント", "％", "計算", "百分率", "割合", "何パーセント", "増加率", "減少率", "％増", "％引き",
   ],
+  yomi: "ぱーせんと わりあい",
   related: ["waribiki-keisan", "shohizei-keisan"],
 
   ui: `

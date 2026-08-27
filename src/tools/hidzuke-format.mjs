@@ -9,6 +9,7 @@ export default {
   keywords: [
     "日付", "フォーマット", "変換", "書式", "エクセル", "シリアル値", "UNIX時間", "ISO", "表記",
   ],
+  yomi: "ひづけ しょしき へんかん",
   related: ["wareki-seireki", "youbi-keisan"],
 
   ui: `

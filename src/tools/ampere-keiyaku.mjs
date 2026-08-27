@@ -9,6 +9,7 @@ export default {
   keywords: [
     "アンペア", "契約", "計算", "ブレーカー", "基本料金", "電気代", "40A", "30A", "見直し",
   ],
+  yomi: "あんぺあ ぶれーかー",
   related: ["denkidai-keisan", "yachin-meyasu"],
 
   ui: `

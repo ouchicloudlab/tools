@@ -9,6 +9,7 @@ export default {
   keywords: [
     "有給休暇", "日数", "計算", "付与", "勤続年数", "パート", "比例付与", "年次有給休暇", "時効",
   ],
+  yomi: "ゆうきゅう ゆうきゅうきゅうか",
   related: ["hidzuke-keisan", "zangyodai"],
 
   ui: `

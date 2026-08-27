@@ -57,6 +57,22 @@ function copyDir(src, dest) {
   }
 }
 
+// 全ページのヘッダー検索に埋め込むインデックス。
+// q は検索用に正規化済みの文字列（カタカナ→ひらがな、小文字化）。
+// slug も含めることで、ローマ字入力でも引けるようにしている。
+function buildSearchIndex(tools) {
+  const kana = (s) =>
+    String(s).replace(/[ァ-ヶ]/g, (c) =>
+      String.fromCharCode(c.charCodeAt(0) - 0x60));
+  return tools.map((t) => {
+    const title = t.h1 || t.title;
+    const desc = t.cardText || t.description;
+    const hay = [title, desc, (t.keywords || []).join(" "),
+      t.yomi || "", t.slug].join(" ");
+    return { s: t.slug, t: title, d: desc, q: kana(hay).toLowerCase() };
+  });
+}
+
 const fmtDate = (d) =>
   new Date(d).toLocaleDateString("ja-JP", {
     year: "numeric",
@@ -87,7 +103,7 @@ async function loadTools() {
 }
 
 // ---- ツールページ ----------------------------------------------------
-function renderTool(tool, all) {
+function renderTool(tool, all, searchIndex) {
   const cat = categories[tool.category];
   const crumbs = [
     { label: "ホーム", path: "/" },
@@ -184,11 +200,12 @@ ${adSlot("footer")}
     extraStyle: tool.style || "",
     extraScript: tool.script || "",
     extraHead: appLd + faqLd + breadcrumbLd(crumbs),
+    searchIndex,
   });
 }
 
 // ---- トップページ ----------------------------------------------------
-function renderIndex(tools) {
+function renderIndex(tools, searchIndex) {
   const byCat = Object.entries(categories)
     .sort((a, b) => a[1].order - b[1].order)
     .map(([key, c]) => {
@@ -203,7 +220,8 @@ function renderIndex(tools) {
     })
     .join("\n");
 
-  const searchIndex = tools.map((t) => ({
+  // トップページ内の一覧切り替え用。ヘッダー検索とは表示のしかたが違うため別に持つ。
+  const topIndex = tools.map((t) => ({
     s: t.slug,
     t: t.h1 || t.title,
     d: t.cardText || t.description,
@@ -228,7 +246,7 @@ ${adSlot("footer")}
 `;
 
   const script = `
-const IDX = ${JSON.stringify(searchIndex)};
+const IDX = ${JSON.stringify(topIndex)};
 const BASE = ${JSON.stringify(site.base || "")};
 const CATS = ${JSON.stringify(
     Object.fromEntries(
@@ -269,11 +287,12 @@ q.addEventListener("input", () => {
       description: site.description,
       inLanguage: "ja",
     }),
+    searchIndex,
   });
 }
 
 // ---- カテゴリページ --------------------------------------------------
-function renderCategory(key, cat, tools) {
+function renderCategory(key, cat, tools, searchIndex) {
   const list = tools.filter((t) => t.category === key);
   const crumbs = [
     { label: "ホーム", path: "/" },
@@ -292,11 +311,12 @@ ${adSlot("footer")}
     crumbs,
     body,
     extraHead: breadcrumbLd(crumbs),
+    searchIndex,
   });
 }
 
 // ---- 固定ページ ------------------------------------------------------
-function renderPages() {
+function renderPages(searchIndex) {
   if (!fs.existsSync(pagesDir)) return [];
   const out = [];
   for (const f of fs.readdirSync(pagesDir).filter((x) => x.endsWith(".md"))) {
@@ -320,11 +340,74 @@ function renderPages() {
         crumbs,
         body: `<h1>${esc(title)}</h1><div class="guide">${html}</div>`,
         extraHead: breadcrumbLd(crumbs),
+        searchIndex,
       })
     );
     out.push({ slug, title });
   }
   return out;
+}
+
+// ---- 404ページ ------------------------------------------------------
+// GitHub Pages は存在しないURLでこのファイルを返す。
+// 標準の404だとサイトの外に出てしまうため、検索とカテゴリ一覧を置いて戻れるようにする。
+function render404(searchIndex) {
+  const cats = Object.entries(categories)
+    .sort((a, b) => a[1].order - b[1].order)
+    .map(([key, c]) =>
+      `<a class="card" href="${withBase("/category/" + key + "/")}">
+  <span class="card-cat">${c.emoji}</span>
+  <span class="card-title">${esc(c.label)}</span>
+  <span class="card-desc">${esc(c.intro.slice(0, 40))}…</span>
+</a>`)
+    .join("\n");
+
+  return layout({
+    title: "ページが見つかりません",
+    description: "お探しのページは見つかりませんでした。カテゴリ一覧または検索からお探しください。",
+    path: "/404.html",
+    body: `
+<h1>ページが見つかりませんでした</h1>
+<p class="lead">
+  URLが変わったか、入力に誤りがあるようです。
+  上の「🔍 探す」から検索するか、下のカテゴリからお探しください。
+</p>
+<p><a class="btn" href="${withBase("/")}">ツール一覧に戻る</a></p>
+<h2>カテゴリから探す</h2>
+<div class="cards">${cats}</div>
+`,
+    searchIndex,
+  });
+}
+
+// ---- PWA（ホーム画面に追加）------------------------------------------
+function writePwa() {
+  // アイコンは絵文字を描いたSVG。ラスタ画像を持たずに済ませる。
+  const icon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#1f6feb"/>
+  <text x="256" y="360" font-size="280" text-anchor="middle">🧮</text>
+</svg>`;
+  fs.writeFileSync(path.join(distDir, "icon.svg"), icon, "utf8");
+
+  const manifest = {
+    name: site.name,
+    short_name: site.name,
+    description: site.description,
+    start_url: (site.base || "") + "/",
+    scope: (site.base || "") + "/",
+    display: "standalone",
+    background_color: "#f6f7f9",
+    theme_color: "#1f6feb",
+    lang: "ja",
+    icons: [
+      { src: (site.base || "") + "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
+    ],
+  };
+  fs.writeFileSync(
+    path.join(distDir, "manifest.webmanifest"),
+    JSON.stringify(manifest, null, 2),
+    "utf8"
+  );
 }
 
 // ---- sitemap / robots / ads.txt --------------------------------------
@@ -377,12 +460,16 @@ fs.rmSync(distDir, { recursive: true, force: true });
 ensure(distDir);
 copyDir(publicDir, distDir);
 
-for (const tool of tools) writePage(tool.slug, renderTool(tool, tools));
+const searchIndex = buildSearchIndex(tools);
+
+for (const tool of tools) writePage(tool.slug, renderTool(tool, tools, searchIndex));
 for (const [key, cat] of Object.entries(categories)) {
-  writePage(`category/${key}`, renderCategory(key, cat, tools));
+  writePage(`category/${key}`, renderCategory(key, cat, tools, searchIndex));
 }
-writePage("", renderIndex(tools));
-const pages = renderPages();
+writePage("", renderIndex(tools, searchIndex));
+const pages = renderPages(searchIndex);
+fs.writeFileSync(path.join(distDir, "404.html"), applyBase(render404(searchIndex)), "utf8");
+writePwa();
 writeMeta(tools, pages);
 
 console.log(

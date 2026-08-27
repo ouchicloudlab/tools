@@ -9,6 +9,7 @@ export default {
   keywords: [
     "全角", "半角", "変換", "カタカナ", "ひらがな", "大文字", "小文字", "一括", "置換", "空白削除",
   ],
+  yomi: "もじへんかん ぜんかく はんかく",
   related: ["mojisu-count"],
 
   ui: `

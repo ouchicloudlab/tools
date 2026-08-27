@@ -9,6 +9,7 @@ export default {
   keywords: [
     "速さ", "距離", "時間", "計算", "時速", "分速", "秒速", "徒歩", "ペース", "km/h",
   ],
+  yomi: "そくど きょり じかん じそく",
   related: ["inch-cm", "gasoline-dai"],
 
   ui: `

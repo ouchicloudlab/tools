@@ -9,6 +9,7 @@ export default {
   keywords: [
     "宅配便", "サイズ", "3辺合計", "60サイズ", "計算", "ゆうパック", "梱包", "送料", "規格",
   ],
+  yomi: "たくはいびん にもつ さんぺんごうけい",
   related: ["menseki-taiseki", "inch-cm"],
 
   ui: `

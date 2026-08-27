@@ -9,6 +9,7 @@ export default {
   keywords: [
     "ポイント還元", "還元率", "実質", "割引", "計算", "ポイント", "何%引き", "クレジットカード", "還元",
   ],
+  yomi: "ぽいんとかんげん かんげんりつ",
   related: ["waribiki-keisan", "percent-keisan"],
 
   ui: `

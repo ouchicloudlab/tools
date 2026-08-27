@@ -9,6 +9,7 @@ export default {
   keywords: [
     "ローン", "返済", "計算", "住宅ローン", "金利", "元利均等", "元金均等", "繰り上げ返済", "シミュレーション",
   ],
+  yomi: "ろーん へんさい じゅうたくろーん",
   related: ["percent-keisan", "jikyu-nensyu"],
 
   ui: `

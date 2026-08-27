@@ -9,6 +9,7 @@ export default {
   keywords: [
     "面積", "体積", "計算", "円", "三角形", "台形", "円柱", "リットル", "容量", "平米",
   ],
+  yomi: "めんせき たいせき ようせき",
   related: ["tsubo-heibei", "bunsu-keisan"],
 
   ui: `

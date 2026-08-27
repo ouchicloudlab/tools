@@ -9,6 +9,7 @@ export default {
   keywords: [
     "約数", "素因数分解", "最大公約数", "最小公倍数", "素数", "計算", "公約数", "倍数", "GCD",
   ],
+  yomi: "やくすう そいんすうぶんかい ばいすう",
   related: ["bunsu-keisan", "menseki-taiseki"],
 
   ui: `

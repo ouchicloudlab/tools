@@ -9,6 +9,7 @@ export default {
   keywords: [
     "出産予定日", "妊娠週数", "計算", "最終月経", "妊娠", "何週", "安定期", "産休", "臨月",
   ],
+  yomi: "しゅっさん よていび にんしん",
   related: ["nenrei-keisan", "hidzuke-keisan"],
 
   ui: `

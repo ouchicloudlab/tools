@@ -9,6 +9,7 @@ export default {
   keywords: [
     "分数", "計算", "約分", "通分", "足し算", "引き算", "掛け算", "割り算", "帯分数", "小数",
   ],
+  yomi: "ぶんすう やくぶん つうぶん",
   related: ["percent-keisan"],
 
   ui: `

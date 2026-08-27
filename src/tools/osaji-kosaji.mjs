@@ -9,6 +9,7 @@ export default {
   keywords: [
     "大さじ", "小さじ", "グラム", "換算", "計量", "カップ", "ml", "調味料", "レシピ", "何g",
   ],
+  yomi: "おおさじ こさじ けいりょう",
   related: ["inch-cm", "tsubo-heibei"],
 
   ui: `

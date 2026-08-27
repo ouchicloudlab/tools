@@ -9,6 +9,7 @@ export default {
   keywords: [
     "食費", "目安", "計算", "1か月", "予算", "1食", "自炊", "外食", "平均", "節約",
   ],
+  yomi: "しょくひ しょくりょうひ",
   related: ["yachin-meyasu", "chokin-mokuhyo"],
 
   ui: `

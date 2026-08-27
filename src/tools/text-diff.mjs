@@ -9,6 +9,7 @@ export default {
   keywords: [
     "差分", "比較", "diff", "テキスト", "違い", "変更点", "校正", "原稿", "チェック",
   ],
+  yomi: "さぶん ひかく こうせい",
   related: ["moji-henkan", "csv-seikei", "mojisu-count"],
 
   ui: `

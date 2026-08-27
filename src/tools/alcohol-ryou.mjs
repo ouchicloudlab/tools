@@ -9,6 +9,7 @@ export default {
   keywords: [
     "アルコール", "純アルコール", "計算", "分解", "時間", "度数", "適正量", "飲酒", "二日酔い",
   ],
+  yomi: "あるこーる おさけ にどよい",
   related: ["calorie-hitsuyo", "suibun-hosuu"],
 
   ui: `

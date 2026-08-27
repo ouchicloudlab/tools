@@ -9,6 +9,7 @@ export default {
   keywords: [
     "和暦", "西暦", "変換", "令和", "平成", "昭和", "大正", "明治", "元号", "年号", "履歴書",
   ],
+  yomi: "われき せいれき げんごう",
   related: ["nenrei-keisan", "hidzuke-keisan"],
 
   ui: `

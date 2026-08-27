@@ -9,6 +9,7 @@ export default {
   keywords: [
     "曜日", "計算", "第3水曜", "何曜日", "生まれた日", "カレンダー", "次の", "日付",
   ],
+  yomi: "ようび かれんだー",
   related: ["hidzuke-keisan", "nenrei-keisan"],
 
   ui: `

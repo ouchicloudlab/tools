@@ -9,6 +9,7 @@ export default {
   keywords: [
     "貯金", "目標", "計算", "毎月", "いくら", "貯蓄", "積立", "期限", "逆算",
   ],
+  yomi: "ちょきん ちょちく",
   related: ["tsumitate-fukuri", "jikyu-nensyu"],
 
   ui: `

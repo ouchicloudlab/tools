@@ -9,6 +9,7 @@ export default {
   keywords: [
     "時間計算", "労働時間", "勤務時間", "時刻", "足し算", "引き算", "分", "何時間", "夜勤", "残業",
   ],
+  yomi: "じかん ろうどうじかん きんむ",
   related: ["hidzuke-keisan", "jikyu-nensyu"],
 
   ui: `
