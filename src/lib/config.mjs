@@ -33,14 +33,14 @@ export const ads = {
 //  アクセス解析（GA4）。空なら何も出力しない。
 // =============================================================
 export const analytics = {
-  gaId: "",
+  gaId: "G-WSXCJJRCNY",
 };
 
 // =============================================================
 //  運営者情報（AdSense審査に必要）
 // =============================================================
 export const owner = {
-  name: "サクッとツール 運営",
+  name: "おうちクラウド Lab 編集部",
   since: "2026年8月",
   contactEmail: "ouchicloudlab@gmail.com",
   contactFormUrl: "",
