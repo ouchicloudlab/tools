@@ -194,6 +194,8 @@ export function layout({
   extraScript = "",
   crumbs = null,
   searchIndex = null,
+  // 404 のようにコンテンツのない画面では広告スクリプトを読み込まない。
+  noAds = false,
 }) {
   const fullTitle =
     path === "/" ? `${site.name}｜${site.tagline}` : `${title}｜${site.name}`;
@@ -209,7 +211,7 @@ export function layout({
     )
     .join("");
 
-  const adsense = ads.adsenseClient
+  const adsense = ads.adsenseClient && !noAds
     ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${esc(
         ads.adsenseClient
       )}" crossorigin="anonymous"></script>`

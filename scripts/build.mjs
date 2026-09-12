@@ -301,6 +301,7 @@ function renderCategory(key, cat, tools, searchIndex) {
   const body = `
 <h1>${cat.emoji} ${esc(cat.label)}のツール</h1>
 <p class="lead">${esc(cat.intro)}</p>
+${(cat.detail || []).map((s) => `<p class="cat-detail">${esc(s)}</p>`).join("")}
 <div class="cards">${list.map(toolCard).join("\n")}</div>
 ${adSlot("footer")}
 `;
@@ -366,6 +367,8 @@ function render404(searchIndex) {
     title: "ページが見つかりません",
     description: "お探しのページは見つかりませんでした。カテゴリ一覧または検索からお探しください。",
     path: "/404.html",
+    // 404 はコンテンツのない画面のため、広告は載せない（ポリシー「広告枠の価値」）
+    noAds: true,
     body: `
 <h1>ページが見つかりませんでした</h1>
 <p class="lead">

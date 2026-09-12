@@ -277,3 +277,6 @@ td { font-variant-numeric: tabular-nums; }
   .search-overlay { padding: 4vh 10px 10px; }
   .search-tip { display: none; }
 }
+
+/* カテゴリページの解説文 */
+.cat-detail { max-width: 46rem; margin: 0 auto 12px; line-height: 1.9; font-size: .93rem; opacity: .92; }
